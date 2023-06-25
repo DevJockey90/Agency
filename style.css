@@ -23,6 +23,10 @@ h1,h2,h3,h4{
     color: rgb(20, 20, 176);
 }
 
+p{
+    color: #393A56;
+}
+
 .container{
     width: 80%;
     margin: auto;
@@ -53,7 +57,7 @@ section{
 /* Header */
 .header{
     background-image: url(./img/header.jpg);
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     background-size: cover;
 
@@ -64,6 +68,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    margin-right: 20px;
 }
 .nav-item:hover.nav-item a{
     color: rgb(0, 110, 255);
@@ -102,4 +107,51 @@ ul li a{
     font-size: 3rem;
 
 }
+
+/*Services*/
+.title{
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+     
+}
+.title h1{
+    font-size: 2rem;
+}
+
+.services{
+    background-color:  rgb(227, 239, 243);
+}
+
+.services-wrap{
+    margin-top: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+.service{
+    background-color: white;
+    padding: 2rem 1rem;
+    box-shadow: 2px 2px 5px 2px #00000056;
+    border-radius: 5px;
+}
+.service:hover{
+    background: lightcyan;
+}
+.service:hover.service p,
+.service:hover.service h1,
+.service:hover.service .fa {
+    color: rgb(243, 230, 230);
+}
+
+.service .fa {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(81, 163, 236);
+}
+
+.service h1{
+    margin-bottom: 10px;
+
+}
+
 
